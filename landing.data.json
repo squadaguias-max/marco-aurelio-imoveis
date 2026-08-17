@@ -1,0 +1,62 @@
+{
+  "project": {
+    "name": "Marco Advocacia — Usucapião",
+    "displayName": "Marco Advocacia",
+    "conversionAction": "Análise do imóvel",
+    "slug": "marco-advocacia-usucapiao",
+    "sourceTemplate": "Template 2",
+    "sourceVersion": "2.0.0"
+  },
+  "professional": {
+    "name": "Marco Aurelio Alves de Souza Aguiar",
+    "officeName": "Marco Advocacia",
+    "oab": "OAB/TO 3.020 · OAB/GO 40.813-A",
+    "area": "Usucapião e regularização de imóveis",
+    "city": "Goiânia/GO",
+    "biography": "Atuação jurídica voltada à análise de situações envolvendo posse, documentação e regularização de imóveis urbanos e rurais."
+  },
+  "contact": {
+    "whatsapp": "",
+    "whatsappMessage": "Olá! Vim pelo site da Marco Advocacia e gostaria de analisar a situação do meu imóvel.",
+    "email": "marcoadvocaciaadvogados@gmail.com",
+    "instagram": "https://www.instagram.com/marcoadvocacia_/",
+    "instagramLabel": "@marcoadvocacia_"
+  },
+  "location": {
+    "city": "Goiânia/GO",
+    "regions": "Atendimento em Goiás, presencial e on-line",
+    "address": "Rua 10, nº 93, Setor Oeste, Goiânia — GO",
+    "hours": "Segunda a sexta, das 8h às 18h",
+    "mapsQuery": "Rua 10, 93, Setor Oeste, Goiânia, GO"
+  },
+  "theme": {
+    "primary": "#041c39",
+    "secondary": "#eaab3d",
+    "style": "Editorial, patrimonial e contemporâneo"
+  },
+  "hero": {
+    "title": "Você tem um imóvel de R$ 150 mil, R$ 300 mil, R$ 500 mil ou até R$ 1 milhão sem regularização?",
+    "description": "Um imóvel pode ter valor significativo e, ainda assim, permanecer sem escritura, registro ou documentação regularizada em nome de quem exerce a posse.",
+    "cta": "Quero analisar meu imóvel"
+  },
+  "audience": "Possuidores de imóveis urbanos ou rurais que precisam avaliar a regularização da propriedade",
+  "services": [
+    {
+      "title": "Usucapião de imóveis urbanos",
+      "description": "Análise do tempo de posse, da área, da finalidade de moradia e dos documentos disponíveis."
+    },
+    {
+      "title": "Usucapião de imóveis rurais",
+      "description": "Avaliação da posse, produtividade, extensão da área e exigências de georreferenciamento."
+    }
+  ],
+  "assets": "Logotipo do cliente e imagem editorial criada para o hero",
+  "approval": {
+    "responsible": "Marco Aurelio A. de Souza Aguiar",
+    "approved": false
+  },
+  "pending": [
+    "Confirmar o número completo do WhatsApp antes da publicação",
+    "Aprovar o conteúdo final"
+  ]
+}

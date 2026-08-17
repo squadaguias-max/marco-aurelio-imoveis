@@ -1,0 +1,2 @@
+import { defaultBrand } from "./brand.config";
+export const appConfig={name:"Almeida & Vasconcelos Advocacia",description:"Assessoria jurídica estratégica, construída com rigor técnico, proximidade e visão de longo prazo.",brand:defaultBrand,features:{catalog:false,account:false,admin:false},navigation:[{label:"Início",to:"#inicio"},{label:"Áreas de atuação",to:"#atuacao"},{label:"O escritório",to:"#escritorio"},{label:"Equipe",to:"#equipe"}]};
