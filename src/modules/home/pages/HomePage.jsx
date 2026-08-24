@@ -203,6 +203,15 @@ export function HomePage() {
       </div>
     </section>
 
-    <a className="mobile-cta" href="#analise"><MessageCircle /><span>Quero analisar meu imóvel</span></a>
+    <a
+      className="whatsapp-float"
+      href={whatsappUrl()}
+      target="_blank"
+      rel="noreferrer"
+      aria-label={`Conversar no WhatsApp: ${site.contact.phoneLabel}`}
+      title="Conversar no WhatsApp"
+    >
+      <MessageCircle aria-hidden="true" />
+    </a>
   </>;
 }
