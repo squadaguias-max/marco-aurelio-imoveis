@@ -14,6 +14,7 @@ import {
   ShieldCheck,
 } from "lucide-react";
 import { templateConfig as site, whatsappUrl } from "../../../config/template.config";
+import simbolo from "../../../assets/simbolo.png";
 
 const fieldLabels = {
   nome: "Nome",
@@ -46,7 +47,7 @@ function handleAnalysisSubmit(event) {
 }
 
 function BrandMark() {
-  return <span className="brand-symbol" aria-hidden="true"><span>MA</span></span>;
+  return <img className="brand-symbol-image" src={simbolo} alt="" aria-hidden="true" />;
 }
 
 export function HomePage() {
@@ -60,14 +61,14 @@ export function HomePage() {
       <div className="hero-grain" />
       <div className="container hero-content">
         <span className="eyebrow light">Usucapião · Imóveis urbanos e rurais</span>
-        <h1>Você tem um imóvel de <em>R$ 150 mil a R$ 1 milhão</em> sem regularização?</h1>
+        <h1>Você tem um imóvel <em>a partir de R$ 150 mil</em> sem regularização?</h1>
         <p>{site.hero.description}</p>
         <div className="hero-actions">
           <a className="button button-gold" href="#analise">{site.hero.cta}<ArrowRight /></a>
           <a className="text-link light-link" href="#situacoes">Entender minha situação <ArrowDown /></a>
         </div>
-        <div className="hero-values" aria-label="Faixas de valor atendidas">
-          <span>R$ 150 mil</span><i /><span>R$ 300 mil</span><i /><span>R$ 500 mil</span><i /><span>R$ 1 milhão+</span>
+        <div className="hero-values" aria-label="Perfil de atendimento">
+          <span>A partir de R$ 150 mil</span><i /><span>Imóveis urbanos e rurais</span><i /><span>Atendimento em Goiás</span>
         </div>
       </div>
       <div className="hero-side-note"><ShieldCheck /><span>Análise jurídica<br />individualizada</span></div>
@@ -152,7 +153,7 @@ export function HomePage() {
       <div className="container analysis-grid">
         <div className="analysis-copy">
           <span className="eyebrow light">Análise individualizada</span>
-          <h2>Seu imóvel vale R$ 150 mil, R$ 300 mil, R$ 500 mil ou mais?</h2>
+          <h2>Seu imóvel vale a partir de R$ 150 mil?</h2>
           <p>Não deixe um patrimônio de valor relevante permanecer sem entender sua situação jurídica e documental.</p>
           <p>Conte o valor aproximado do imóvel e as características da sua posse para uma análise inicial.</p>
           <div className="privacy-note"><ShieldCheck /><span><strong>Contato confidencial</strong><small>As informações são usadas apenas para o atendimento solicitado.</small></span></div>
@@ -162,7 +163,7 @@ export function HomePage() {
           <div className="form-grid">
             <label>Seu nome<input name="nome" type="text" autoComplete="name" required placeholder="Nome completo" /></label>
             <label>Telefone/WhatsApp<input name="contato" type="tel" autoComplete="tel" required placeholder="(00) 00000-0000" /></label>
-            <label>Valor aproximado<select name="valor" required defaultValue=""><option value="" disabled>Selecione uma faixa</option><option>Até R$ 150 mil</option><option>R$ 150 mil a R$ 300 mil</option><option>R$ 300 mil a R$ 500 mil</option><option>R$ 500 mil a R$ 1 milhão</option><option>Acima de R$ 1 milhão</option></select></label>
+            <label>Valor aproximado<select name="valor" required defaultValue=""><option value="" disabled>Selecione uma faixa</option><option>R$ 150 mil a R$ 300 mil</option><option>R$ 300 mil a R$ 500 mil</option><option>R$ 500 mil a R$ 1 milhão</option><option>Acima de R$ 1 milhão</option></select></label>
             <label>Tipo do imóvel<select name="tipo" required defaultValue=""><option value="" disabled>Selecione</option><option>Urbano</option><option>Rural</option><option>Não sei informar</option></select></label>
             <label>Tempo de posse<input name="posse" type="text" required placeholder="Ex.: 12 anos" /></label>
             <label>Tem documentos?<select name="documentos" required defaultValue=""><option value="" disabled>Selecione</option><option>Sim</option><option>Tenho alguns</option><option>Não tenho</option><option>Não sei</option></select></label>
@@ -190,6 +191,7 @@ export function HomePage() {
           <h2>Atendimento presencial e on-line.</h2>
           <p>Fale com a equipe ou visite o escritório em Goiânia, mediante agendamento.</p>
           <div className="contact-list">
+            <a href={whatsappUrl()} target="_blank" rel="noreferrer"><MessageCircle /><span><small>WhatsApp</small>{site.contact.phoneLabel}</span></a>
             <a href={`mailto:${site.contact.email}`}><Mail /><span><small>E-mail</small>{site.contact.email}</span></a>
             <a href={site.contact.instagram} target="_blank" rel="noreferrer"><Instagram /><span><small>Instagram</small>{site.contact.instagramLabel}</span></a>
             <span><Clock3 /><span><small>Horário</small>{site.office.hours}</span></span>

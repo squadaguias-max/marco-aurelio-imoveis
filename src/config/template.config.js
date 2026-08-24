@@ -1,4 +1,4 @@
-import { projectData, projectWhatsappUrl, whatsappDigits } from "./project.data";
+import { phoneLabel, projectData, projectWhatsappUrl, whatsappDigits } from "./project.data";
 
 export const templateConfig = {
   brand: {
@@ -10,6 +10,7 @@ export const templateConfig = {
   hero: projectData.hero,
   contact: {
     ...projectData.contact,
+    phoneLabel,
     hasWhatsapp: /^\d{12,13}$/.test(whatsappDigits),
   },
   office: {

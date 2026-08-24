@@ -16,7 +16,7 @@
     "biography": "Atuação jurídica voltada à análise de situações envolvendo posse, documentação e regularização de imóveis urbanos e rurais."
   },
   "contact": {
-    "whatsapp": "",
+    "whatsapp": "5562999613020",
     "whatsappMessage": "Olá! Vim pelo site da Marco Advocacia e gostaria de analisar a situação do meu imóvel.",
     "email": "marcoadvocaciaadvogados@gmail.com",
     "instagram": "https://www.instagram.com/marcoadvocacia_/",
@@ -35,7 +35,7 @@
     "style": "Editorial, patrimonial e contemporâneo"
   },
   "hero": {
-    "title": "Você tem um imóvel de R$ 150 mil, R$ 300 mil, R$ 500 mil ou até R$ 1 milhão sem regularização?",
+    "title": "Você tem um imóvel a partir de R$ 150 mil sem regularização?",
     "description": "Um imóvel pode ter valor significativo e, ainda assim, permanecer sem escritura, registro ou documentação regularizada em nome de quem exerce a posse.",
     "cta": "Quero analisar meu imóvel"
   },
@@ -56,7 +56,6 @@
     "approved": false
   },
   "pending": [
-    "Confirmar o número completo do WhatsApp antes da publicação",
     "Aprovar o conteúdo final"
   ]
 }
