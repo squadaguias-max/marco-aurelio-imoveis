@@ -260,7 +260,7 @@ footer { padding: 58px 0 0; background: var(--navy-deep); color: white; }
   .faq-list details p { margin-left: 38px; }
   .footer-main { grid-template-columns: 1fr; gap: 35px; }
   .footer-legal { grid-template-columns: 1fr; gap: 10px; }
-  .whatsapp-float { right: 16px; bottom: 16px; width: 56px; height: 56px; }
+  .whatsapp-float { right: 16px; bottom: calc(16px + env(safe-area-inset-bottom)); width: 56px; height: 56px; }
   .whatsapp-float svg { width: 27px; height: 27px; }
 }
 
