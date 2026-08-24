@@ -212,6 +212,7 @@ export function HomePage() {
       title="Conversar no WhatsApp"
     >
       <MessageCircle aria-hidden="true" />
+      <span>WhatsApp</span>
     </a>
   </>;
 }
