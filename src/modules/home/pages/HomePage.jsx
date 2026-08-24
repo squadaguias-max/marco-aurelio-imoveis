@@ -14,7 +14,7 @@ import {
   ShieldCheck,
 } from "lucide-react";
 import { templateConfig as site, whatsappUrl } from "../../../config/template.config";
-import simbolo from "../../../assets/simbolo.png";
+import fullLogo from "../../../assets/logo.png";
 
 const fieldLabels = {
   nome: "Nome",
@@ -44,10 +44,6 @@ function handleAnalysisSubmit(event) {
 
   const subject = encodeURIComponent("Solicitação de análise de imóvel");
   window.location.href = `mailto:${site.contact.email}?subject=${subject}&body=${encodeURIComponent(message)}`;
-}
-
-function BrandMark() {
-  return <img className="brand-symbol-image" src={simbolo} alt="" aria-hidden="true" />;
 }
 
 export function HomePage() {
@@ -125,8 +121,7 @@ export function HomePage() {
     <section className="office" id="escritorio">
       <div className="container office-grid">
         <div className="office-panel">
-          <BrandMark />
-          <span>Marco Advocacia</span>
+          <img className="office-logo" src={fullLogo} alt="Marco Advocacia" />
           <small>Goiânia · Goiás</small>
           <div className="office-lines"><i /><i /><i /></div>
           <p>Imóveis urbanos<br /><em>e rurais</em></p>

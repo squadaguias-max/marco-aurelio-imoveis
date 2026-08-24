@@ -1,6 +1,6 @@
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
-import logoClaro from "../../assets/logo-claro.png";
+import symbolLogo from "../../assets/simbolo.png";
 
 export function Header() {
   const [open, setOpen] = useState(false);
@@ -18,7 +18,8 @@ export function Header() {
   return <header className={`site-header${scrolled ? " scrolled" : ""}`}>
     <div className="container header-inner">
       <a className="brand" href="#inicio" aria-label="Marco Advocacia — início" onClick={close}>
-        <img className="brand-logo" src={logoClaro} alt="Marco Advocacia" />
+        <img className="brand-symbol-image" src={symbolLogo} alt="" aria-hidden="true" />
+        <span className="brand-copy"><strong>Marco Advocacia</strong><small>Usucapião e regularização imobiliária</small></span>
       </a>
       <button className="menu-button" onClick={() => setOpen(!open)} aria-expanded={open} aria-label={open ? "Fechar menu" : "Abrir menu"}>{open ? <X /> : <Menu />}</button>
       <nav className={open ? "nav open" : "nav"} aria-label="Navegação principal">

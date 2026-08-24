@@ -1,11 +1,11 @@
 import { templateConfig as site } from "../../config/template.config";
-import logoClaro from "../../assets/logo-claro.png";
+import fullLogo from "../../assets/logo.png";
 
 export function Footer() {
   return <footer>
     <div className="container footer-main">
       <div className="footer-brand">
-        <img className="footer-logo" src={logoClaro} alt="Marco Advocacia" />
+        <img className="footer-logo" src={fullLogo} alt="Marco Advocacia" />
       </div>
       <div className="footer-links"><a href="#situacoes">Situação do imóvel</a><a href="#processo">Como funciona</a><a href="#escritorio">Escritório</a><a href="#duvidas">Dúvidas frequentes</a></div>
       <div className="footer-contact"><a href={site.contact.hasWhatsapp ? `https://wa.me/${site.contact.whatsapp}` : "#analise"} target={site.contact.hasWhatsapp ? "_blank" : undefined} rel={site.contact.hasWhatsapp ? "noreferrer" : undefined}>WhatsApp {site.contact.phoneLabel}</a><a href={`mailto:${site.contact.email}`}>{site.contact.email}</a><a href={site.contact.instagram} target="_blank" rel="noreferrer">{site.contact.instagramLabel}</a><span>{site.office.city}</span></div>
