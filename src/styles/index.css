@@ -39,7 +39,7 @@ img { max-width: 100%; }
 .site-header.scrolled { background: rgba(4, 28, 57, .96); box-shadow: 0 10px 35px rgba(1, 13, 28, .18); backdrop-filter: blur(14px); }
 .header-inner { display: flex; min-height: 88px; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,.18); }
 .brand { display: flex; align-items: center; gap: 13px; }
-.brand-logo { display: block; width: 205px; height: auto; }
+.brand-logo { display: block; width: 170px; height: auto; }
 .nav { display: flex; align-items: center; gap: 30px; font-size: .73rem; }
 .nav > a:not(.nav-cta) { color: #dde4ec; transition: color .2s; }
 .nav > a:not(.nav-cta):hover { color: var(--gold-pale); }
@@ -226,7 +226,7 @@ footer { padding: 58px 0 0; background: var(--navy-deep); color: white; }
   .container { width: min(100% - 32px, 1180px); }
   .section-pad { padding: 80px 0; }
   .header-inner { min-height: 76px; }
-  .brand-logo { width: 160px; }
+  .brand-logo { width: 138px; }
   .nav { top: 76px; right: 16px; left: 16px; }
   .hero { min-height: 760px; }
   .hero-image { background-position: 68% center; }
